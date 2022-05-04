@@ -36,6 +36,23 @@ body {
     cursor: pointer;
     transition: 0.2s ease-in-out;
   }
+    button:hover{
+            background: #ffffff
+            color  #000;
+    }
+            button::after{
+                right: 10px;
+    }
+        button::after{
+            content: ">"
+            font-family  "Jua"
+            position absolute
+            right 15px
+            transition right 1s ease
+        }
+a, a:hover{
+    transition: all 0.3s ease;
+  }
   
   input.search-bar {
     border: none;
