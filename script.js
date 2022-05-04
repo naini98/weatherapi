@@ -41,22 +41,24 @@ let weather ={
         weather.search();
     }
     );
-   function debounce(func, timeout = 300) {
-      let timer;
-      return (...args) => {
+    let counter = 0;
+    const getSuggestions = () => {
+        //Calls API to get Data
+        console.log("Fetching Data...", counter++);
+    }
+    
+    const debounce = function (fn, d) {
+        let timer;
+        return function () {
+        let context = this, args = arguments;
         clearTimeout(timer);
         timer = setTimeout(() => {
-          func.apply(this, args);
-        }, timeout);
-      };
+                fn.apply(context, args);
+            }, d)
+        }
     }
     
-    function saveInput() {
-      console.log("Saving data");
-    }
-    
-    const processChanges = debounce(() => saveInput());
-  
+    const debounceForData = debounce(getSuggestions, 300);
       
    document
         .querySelector(".search-bar")
