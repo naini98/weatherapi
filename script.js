@@ -41,14 +41,31 @@ let weather ={
         weather.search();
     }
     );
+   function debounce(func, timeout = 300) {
+      let timer;
+      return (...args) => {
+        clearTimeout(timer);
+        timer = setTimeout(() => {
+          func.apply(this, args);
+        }, timeout);
+      };
+    }
+    
+    function saveInput() {
+      console.log("Saving data");
+    }
+    
+    const processChanges = debounce(() => saveInput());
+  
       
-      document
+   document
         .querySelector(".search-bar")
         .addEventListener("keyup", function (event) {
           if (event.key == "Enter") {
             weather.search();
           }
         });
+
       
       weather.fetchWeather("Mangalore");
      
