@@ -43,7 +43,7 @@ let weather ={
     );
     let counter = 0;
     const getSuggestions = () => {
-        //Calls API to get Data
+        
         console.log("Fetching Data...", counter++);
     }
     
@@ -58,7 +58,7 @@ let weather ={
         }
     }
     
-    const debounceForData = debounce(getSuggestions, 300);
+    const debounceForData = debounce(getSuggestions, 100);
       
    document
         .querySelector(".search-bar")
