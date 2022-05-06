@@ -5,7 +5,7 @@ body {
     height: 100vh;
     margin: 0;
     font-size: 120;
-    background: #222;
+    background: rgb(236, 226, 226);
     font-family: 'Comic Neue', cursive;
     background-image: url( "https://source.unsplash.com/1600x900/?city,beaches");
 }
