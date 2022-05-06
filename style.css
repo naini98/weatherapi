@@ -10,7 +10,7 @@ body {
     background-image: url( "https://source.unsplash.com/1600x900/?city,beaches");
 }
 .card {
-    background:  #000000d0;
+    
     color:azure;
     padding: 2em;
     border-radius: 30px;
