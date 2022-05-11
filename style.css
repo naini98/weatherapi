@@ -11,7 +11,7 @@ body {
 }
 .card {
     
-    color:azure;
+    color:rgb(0, 255, 255);
     padding: 2em;
     border-radius: 30px;
     width: 100%;
@@ -60,7 +60,7 @@ a, a:hover{
     padding: 0.4em 1em;
     border-radius: 24px;
     background: #7c7c7c2b;
-    color: white;
+    color: rgb(2, 221, 255);
     font-family: inherit;
     font-size: 105%;
     width: calc(100% - 100px);
