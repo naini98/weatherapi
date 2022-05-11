@@ -69,7 +69,7 @@ let weather ={
         });
 
       
-      weather.fetchWeather("Mangalore");
+      weather.fetchWeather("Cityname");
      
     
     
